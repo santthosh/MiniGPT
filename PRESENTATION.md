@@ -148,12 +148,12 @@ Join the slack channel #llm-labs
 
 Remember we are using **characters** as tokens, the other GPT models are using a proper tokenizer as shown in [TikTokenizer](https://tiktokenizer.vercel.app/?model=cl100k_base)
 
-| Model   | Release Date | Parameter Count     | Number of Layers               | Hidden Size    | Attention Heads  | Context Window         |
-|---------|--------------|---------------------|--------------------------------|---------------|------------------|------------------------|
-| MiniGPT | N/A          | ~100K – 1M¹        | ~4 (configurable)              | ~128 (configurable) | 4 (configurable)  | ~64 – 512 tokens²      |
-| GPT-2   | Feb 14, 2019 | ~117M – 1.5B³      | 12 – 48 (depending on size)    | 768 – 1600     | 12 – 25           | 1024 tokens            |
-| GPT-3   | Jun 11, 2020 | 175B⁴              | 96                             | 12,288         | 96               | 2048 tokens            |
-| GPT-4   | Mar 14, 2023 | Not Disclosed⁵ (est. >1T) | Not Disclosed            | Not Disclosed  | Not Disclosed    | 8K or 32K tokens⁶      |
+| Model   | Release Date | Parameter Count  | Number of Layers               | Hidden Size    | Attention Heads  | Context Window       |
+|---------|--------------|------------------|--------------------------------|---------------|------------------|----------------------|
+| MiniGPT | N/A          | ~100K – 1M      | ~4 (configurable)              | ~128 (configurable) | 4 (configurable)  | ~64 – 512 tokens     |
+| GPT-2   | Feb 14, 2019 | ~117M – 1.5B    | 12 – 48 (depending on size)    | 768 – 1600     | 12 – 25           | 1024 tokens          |
+| GPT-3   | Jun 11, 2020 | 175B            | 96                             | 12,288         | 96               | 2048 tokens          |
+| GPT-4   | Mar 14, 2023 | Not Disclosed (est. >1T) | Not Disclosed            | Not Disclosed  | Not Disclosed    | 8K or 32K tokens     |
 
 ### Improve Model Performance 
 
@@ -163,7 +163,7 @@ Post your generated text (which you think is reasonable) + your hyperparameters 
 
 ### Saving, Publishing and Consuming Models
 
-* Simple demo of saving the model we generated to HuggingFace also available in [./miniGPT.ipynb](./miniGPT.ipynb)
+* Simple demo of saving the model we generated to HuggingFace also available in [`miniGPT.ipynb`](./miniGPT.ipynb)
 
 ### Look at some publicly available model weights + config information
 
@@ -172,7 +172,7 @@ Post your generated text (which you think is reasonable) + your hyperparameters 
 
 ## References
 
-[Visualize LLM Models](https://bbycroft.net/llm)
-[What is in my AI](https://s10251.pcdn.co/pdf/2022-Alan-D-Thompson-Whats-in-my-AI-Rev-0b.pdf)
-[Build a Large Language Model from Scratch](https://www.manning.com/books/build-a-large-language-model-from-scratch)
-[GPT Architecture](https://dugas.ch/artificial_curiosity/GPT_architecture.html)
+* [Visualize LLM Models](https://bbycroft.net/llm)
+* [What is in my AI](https://s10251.pcdn.co/pdf/2022-Alan-D-Thompson-Whats-in-my-AI-Rev-0b.pdf)
+* [Build a Large Language Model from Scratch](https://www.manning.com/books/build-a-large-language-model-from-scratch)
+* [GPT Architecture](https://dugas.ch/artificial_curiosity/GPT_architecture.html)
