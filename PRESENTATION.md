@@ -6,7 +6,7 @@ I struggled too. Coming from a traditional full-stack background, diving into a 
 
 In simple terms: Feed a massive amount of text into an AI model, which learns patterns and connections between words, so it can generate meaningful text on its own.
 
-TODO: Insert Diagram AI[ML[DL[LLMs]]]
+![LLM Hierarchy](./diagrams/LLM-Hierarchy.png)
 
 ### 📜History and Evolution
 
@@ -51,19 +51,18 @@ Both of below papers were **landmarks in NLP**, ultimately led to the state we a
 
 ## Architecture
 
-TODO: Insert Diagram
-TODO: Prepare > Train > Consume
+![LLM Workflow](./diagrams/LLMs-Workflow.png)
 
 ### What happens internally?
 
-| **Stage** | **Step**                   | **What Happens?**                                           |
-|-----------|----------------------------|-------------------------------------------------------------|
-| Prepare   | **1. Tokenization**         | Break text into tokens and convert to numbers.              |
-| Prepare   | **2. Embeddings**          | Convert numbers into **meaningful vector representations**. |
-| Train     | **3. Self-Attention**      | Determine which words are important to each other.          |
+| **Stage** | **Step**                  | **What Happens?**                                           |
+|-----------|---------------------------|-------------------------------------------------------------|
+| Prepare   | **1. Tokenization**        | Break text into tokens and convert to numbers.              |
+| Train     | **2. Embeddings**         | Convert numbers into **meaningful vector representations**. |
+| Train     | **3. Self-Attention**     | Determine which words are important to each other.          |
 | Train     | **4. Feed-Forward Layers** | Process attention information and make decisions.           |
 | Train     | **5. Positional Encoding** | Ensure word order is considered.                            |
-| Consume   | **6. Decoding ** | Predict the next word, one step at a time.                  |
+| Consume   | **6. Decoding** | Predict the next word, one step at a time.                  |
 
 
 ### **1️⃣ Tokenization (Turning Words into Numbers)**
@@ -130,6 +129,8 @@ It does this by:
 
 Final output: `"The dog ran toward the park."`
 
+![Transformer Model Architecture](https://dugas.ch/artificial_curiosity/img/GPT_architecture/GPT1.png)
+
 ---
 ## Lets get building our MiniGPT
 
@@ -171,4 +172,7 @@ Post your generated text (which you think is reasonable) + your hyperparameters 
 
 ## References
 
-[Visualize LLM Models] (https://bbycroft.net/llm)
+[Visualize LLM Models](https://bbycroft.net/llm)
+[What is in my AI](https://s10251.pcdn.co/pdf/2022-Alan-D-Thompson-Whats-in-my-AI-Rev-0b.pdf)
+[Build a Large Language Model from Scratch](https://www.manning.com/books/build-a-large-language-model-from-scratch)
+[GPT Architecture](https://dugas.ch/artificial_curiosity/GPT_architecture.html)
